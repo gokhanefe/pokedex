@@ -39,7 +39,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5My-sJ-GJ9">
-                                        <rect key="frame" x="570" y="12" width="22" height="22"/>
+                                        <rect key="frame" x="570" y="25" width="22" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="gjJ-ii-T4g"/>
                                             <constraint firstAttribute="width" constant="22" id="na4-wh-kVc"/>
@@ -54,14 +54,10 @@
                                     <constraint firstItem="FpR-oR-rfc" firstAttribute="centerX" secondItem="hke-au-sgL" secondAttribute="centerX" id="HMK-Yr-dBV"/>
                                     <constraint firstAttribute="height" constant="55" id="QKI-A6-nPX"/>
                                     <constraint firstItem="FpR-oR-rfc" firstAttribute="centerY" secondItem="hke-au-sgL" secondAttribute="centerY" id="VxQ-af-lnh"/>
-                                    <constraint firstItem="5My-sJ-GJ9" firstAttribute="top" secondItem="hke-au-sgL" secondAttribute="top" constant="12" id="eaa-fZ-XBf"/>
+                                    <constraint firstItem="5My-sJ-GJ9" firstAttribute="top" secondItem="hke-au-sgL" secondAttribute="top" constant="25" id="eaa-fZ-XBf"/>
                                     <constraint firstAttribute="trailing" secondItem="5My-sJ-GJ9" secondAttribute="trailing" constant="8" id="p5k-Yc-GHg"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="wLN-Dd-80K">
-                                <rect key="frame" x="0.0" y="55" width="600" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nfu-7a-00h">
                                 <rect key="frame" x="20" y="119" width="560" height="461"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -118,6 +114,10 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" searchBarStyle="minimal" placeholder="Search for Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="wLN-Dd-80K">
+                                <rect key="frame" x="0.0" y="55" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -149,6 +149,7 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="nfu-7a-00h" id="hlG-n6-r6n"/>
+                        <outlet property="searchBar" destination="wLN-Dd-80K" id="ZH2-al-rLS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
